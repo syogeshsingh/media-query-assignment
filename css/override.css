@@ -29,11 +29,11 @@ html{
 	justify-content: center;
 	text-align: center;
 }
-.card__middle__main{
+.font-main{
 	font-size: 16px;
 	color: rgba(0,0,0,0.8);
 }
-.card__middle__sub{
+.font-sub{
 	font-size: 12px;
 	color: rgb(127, 143, 164);
 }
@@ -42,4 +42,19 @@ html{
 }
 .card__footer__link{
 	color: rgb(71, 158, 235);
+}
+
+/*for 480px to 1023px*/
+@media (min-width: 481px) and (max-width: 1023px){
+	.list{
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-top: 1rem;
+	}
+	.list__card{
+		margin-top: 1rem;
+	}
+	.list__card-small-shrink{
+		flex-grow: 0;
+	}
 }
