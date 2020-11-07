@@ -2,59 +2,117 @@ html{
 	background-color: rgb(0, 0, 0, 0.05);
 	font-family: 'Work Sans', sans-serif;
 }
-.list__card{
+.list__card{													/*for card shadow and radius*/
 	box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
 	border: 0px;
 	border-radius: 10px;
 }
-.list__card__top{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-.list__card__view-more{
-	font-size: 16px;
-	color: rgb(53, 64, 82);
+.list__card__view-more{											/*for removing default button styling*/
 	background: none;
 	border: none;
-	float: right;
 }
-.card__top__img{
+.card__top__img{												/*for resizing and reshaping the image*/
 	border-radius: 50%;
 	width: 50%;
 }
-.list__card__middle{
+.list__card__middle{											/*for arranging items inside the card*/
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+	align-items: center;
 }
-.font-main{
+.font-main{														/*for main font*/
 	font-size: 16px;
 	color: rgba(0,0,0,0.8);
-}
-.font-sub{
+}	
+.font-sub{														/*for sub fonts*/
 	font-size: 12px;
 	color: rgb(127, 143, 164);
 }
-.list__card__footer{
+.list__card__footer{											/*for adding border to top of footer*/
 	border-top: 1px solid rgba(229, 229, 229);
 }
-.card__footer__link{
+.link-text{														/*for styling link texts*/
 	color: rgb(71, 158, 235);
+}
+.flex-order-left{												/*for arranging view more button*/
+	order: 2;
+}
+.flex-order-right{										
+	order: 1;
+	align-self: flex-end;
 }
 
 /*for 480px to 1023px*/
 @media (min-width: 481px) and (max-width: 1023px){
-	.list{
+	.list{														/*for changing the flex properties on medium size screen*/
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding-top: 1rem;
 	}
-	.list__card{
+	.list__card{												/*for removing unnecessary stretching on first row cards*/
 		margin-top: 1rem;
 	}
-	.list__card-small-shrink{
-		flex-grow: 0;
+}
+
+/*for beyond 1024px*/
+@media (min-width: 1024px){
+	.header-grid-a{												/*for arranging the header*/
+		grid-area: a;	
+		margin-left: 0rem;	
+	}
+	.header-grid-b{
+		grid-area: b;
+	}
+	.header-grid-c{
+		grid-area: c;
+	}
+	.header-grid-d{
+		grid-area: d;
+	}
+	.header-grid-e{
+		grid-area: e;
+	}
+	.list__header{												/*for arranging the header using css-grid*/
+		display: grid;
+		grid-template-columns: 1fr 6fr 2fr 2fr 2fr 1fr 1fr;
+		grid-template-areas: 
+			". a b c d e .";
+	}
+	.list__card{												/*for undoing the card properties on desktop view*/
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		box-shadow: none;
+		background: none;
+		border-bottom: 1px solid rgba(229, 229, 229);
+	}
+	.list{														/*for adding the style for table on desktop view*/
+		box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
+	    border: 0px;
+	    border-radius: 10px;
+	    background-color: #fff;
+		margin: 4rem;
+	}
+	.list__card__middle{										/*for arraging the items inside each row*/
+		margin-bottom: 0rem;
+		align-items: normal;
+		display: grid;
+		grid-template-columns: 1fr 6fr 2fr 2fr 2fr 1fr 1fr;
+	}
+	.card__top__img{											/*for fixing the image size on desktop view*/
+		width: 30px;
+	}
+	.font-main, .link-text{										/*for changing the font sizes*/
+		font-size: 14px;
+	}
+	.list__card__view-more{										for rearranging the view more button in row
+		margin: 0rem;
+	}
+	.flex-order-left{
+		order: 0;
+	}
+	.flex-order-right{
+		order: 0;
+		align-self: start;
+		padding: 0rem;
 	}
 }
