@@ -2,6 +2,7 @@ html{
 	background-color: rgb(0, 0, 0, 0.05);
 	font-family: 'Work Sans', sans-serif;
 }
+/*main content css*/
 .list__card{													/*for card shadow and radius*/
 	box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
 	border: 0px;
@@ -40,6 +41,25 @@ html{
 .flex-order-right{										
 	order: 1;
 	align-self: flex-end;
+}
+
+/*header content css*/
+.header{
+	border-radius: 0px;
+	border: none;
+	background-color: #fff;
+	box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
+}
+.header__logo{
+	width: 50%;
+}
+.header__action-wrapper{
+	display: flex;
+	justify-content: flex-end;
+}
+.header__action{
+	display: flex;
+	justify-content: flex-end;
 }
 
 /*for 480px to 1023px*/
