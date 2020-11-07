@@ -104,7 +104,7 @@ html{
 	.font-main, .link-text{										/*for changing the font sizes*/
 		font-size: 14px;
 	}
-	.list__card__view-more{										for rearranging the view more button in row
+	.list__card__view-more{										/*for rearranging the view more button in row*/
 		margin: 0rem;
 	}
 	.flex-order-left{
