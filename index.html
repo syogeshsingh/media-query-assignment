@@ -16,7 +16,8 @@
 		<div class="slds-page-header header header_background slds-grid">
 			<div class="slds-page-header__col-title slds-col slds-size_2-of-3 header__logoWrapper">
 				<div class="slds-media__figure">
-					<img src="assets/icons/rows_60_black.png" alt="Avengers Logo" class="slds-icon slds-icon_small slds-hide_large" />
+					<img src="assets/icons/rows_60_black.png" id="menu" alt="Menu Button" class="slds-icon slds-icon_small slds-hide_large" />
+					<img src="assets/icons/close_60_black.png" id="menuClose" alt="Menu Close Button" class="slds-icon slds-icon_small slds-hide_large hide" />
 					<img src="assets/images/logo.png" alt="Avengers Logo" class="header__logo" />
 				</div>
 			</div>
@@ -33,8 +34,8 @@
 		</div>
 	</header>
 	<main>
-		<div class="body">
-			<div class="slds-nav-vertical slds-show_large slds-p-top_medium sideBar">
+		<div id="body" class="body">
+			<div id="sidebar" class="slds-nav-vertical slds-show_large slds-p-top_medium sideBar">
 				<div class="slds-nav-vertical__section">
 					<h2 id="entity-header" class="slds-nav-vertical__title sideBar-heading">Summary</h2>
 					<ul aria-describedby="entity-header">
@@ -123,10 +124,10 @@
 						</div>
 						<!-- buttons -->
 						<div class="slds-grid slds-m-right_small slds-p-around_xx-small slds-show_medium quick-actions__inputs quick-action__button">
-							<button class="slds-button slds-button_icon slds-p-around_xx-small quick-action__button-is-active" title="Settings">
+							<button id="view-toggle-row" class="slds-button slds-button_icon slds-p-around_xx-small quick-action__button-is-active" title="Settings">
 								<img src="assets/icons/rows_60_black.png" class="slds-button__icon" aria-hidden="true">
 							</button>
-							<button class="slds-button slds-button_icon slds-p-around_xx-small" title="Settings">
+							<button id="view-toggle-card" class="slds-button slds-button_icon slds-p-around_xx-small" title="Settings">
 								<img src="assets/icons/tile_card_list_60_black.png" class="slds-button__icon" aria-hidden="true">
 							</button>
 						</div>
@@ -138,7 +139,7 @@
 				<!-- card list -->
 				<div class=" slds-grid slds-grid_vertical list">
 					<!-- list header -->
-					<div class="list__header slds-show_large slds-m-top_large slds-m-horizontal_xx-large slds-m-bottom_medium">
+					<div id="tableHeader" class="list__header slds-show_large slds-m-top_large slds-m-horizontal_xx-large slds-m-bottom_medium">
 						<p class="slds-m-left_xx-large header-main font-sub header-grid-a">Name</p>
 						<p class="header-sub font-sub header-grid-b">Total Contribution</p>
 						<p class="header-sub font-sub header-grid-c">Total Distributions</p>
@@ -438,4 +439,7 @@
 		</div>
 	</main>
 </body>
+
+<script type="text/javascript" src="script/custom.js"></script>
+
 </html>
