@@ -7,6 +7,8 @@ html{
 	box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
 	border: 0px;
 	border-radius: 10px;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 .list__card__view-more{											/*for removing default button styling*/
 	background: none;
@@ -51,7 +53,11 @@ html{
 	box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
 }
 .header__logo{
-	width: 50%;
+	width: 105px;
+	align-self: center;
+}
+.header__logoWrapper{
+	align-self: center;
 }
 .header__action-wrapper{
 	display: flex;
@@ -60,6 +66,23 @@ html{
 .header__action{
 	display: flex;
 	justify-content: flex-end;
+}
+
+/*quick actions css*/
+.font-heading{
+	font-size: 18px;
+	font-weight: bolder;
+}
+.quick-actions__controls{
+	justify-content: flex-end;
+	align-items: center;
+}
+.quick-action__button{
+	background-color: rgb(255, 255, 255);
+}
+.quick-action__button-is-active{
+	background-color: rgba(18, 155, 250, .5);
+	border-radius: 0px;
 }
 
 /*for 480px to 1023px*/
@@ -110,7 +133,8 @@ html{
 	    border: 0px;
 	    border-radius: 10px;
 	    background-color: #fff;
-		margin: 4rem;
+		margin: 3rem;
+		flex-grow: 1;
 	}
 	.list__card__middle{										/*for arraging the items inside each row*/
 		margin-bottom: 0rem;
@@ -122,7 +146,7 @@ html{
 		width: 30px;
 	}
 	.font-main, .link-text{										/*for changing the font sizes*/
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.list__card__view-more{										/*for rearranging the view more button in row*/
 		margin: 0rem;
@@ -134,5 +158,46 @@ html{
 		order: 0;
 		align-self: start;
 		padding: 0rem;
+	}
+
+	/*for page header*/
+	.border-right{
+		border-right: 1px solid rgba(0,0,0,0.1);
+	}
+
+	/*for sidebar*/
+	.body{
+		display: flex;
+	}
+	.listWrapper{
+		flex-grow: 1;
+	}
+	.sideBar{
+		background-color: rgba(198, 231, 250, 0.5);
+		flex: 0 0 20em;
+	}
+	.sideBar-heading{
+		font-size: 10px;
+		text-transform: uppercase;
+		color: rgba(18, 155, 250, 1);
+		font-weight: bold;
+	}
+
+	/*for top quick actions*/
+	.quick-actions__controls{
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.slds-button_icon{
+		flex-shrink: 0;
+	}
+	.quick-actions__inputs{
+		box-shadow: 2px 2px 20px 5px rgba(13, 60, 200, 0.05);
+		border: 0px;
+		border-radius: 0px;
+		background-color: rgb(255, 255, 255);
+	}
+	.quick-actions__inputs-size{
+		width: 7rem;
 	}
 }
