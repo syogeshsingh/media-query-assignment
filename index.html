@@ -14,343 +14,427 @@
 	<header class="header">		
 		<!-- navbar -->
 		<div class="slds-page-header header header_background slds-grid">
-			<div class="slds-page-header__col-title slds-col slds-size_2-of-3">
-				<div class="slds-media__figure header__logoWrapper">
-					<img src="assets/icons/rows_60_black.png" alt="Avengers Logo" class="slds-icon slds-icon_small" />
+			<div class="slds-page-header__col-title slds-col slds-size_2-of-3 header__logoWrapper">
+				<div class="slds-media__figure">
+					<img src="assets/icons/rows_60_black.png" alt="Avengers Logo" class="slds-icon slds-icon_small slds-hide_large" />
 					<img src="assets/images/logo.png" alt="Avengers Logo" class="header__logo" />
 				</div>
 			</div>
 			<div class="slds-page-header__col-actions slds-col slds-size_1-of-3">
 				<div class="slds-page-header__controls slds-page-header__control slds-grid header__action-wrapper">
-					<div class="slds-size_1-of-2 header__action slds-m-top_x-small"><img src="assets/icons/notification_60_black.png" class="slds-icon slds-icon_small"></div>
-					<div class="slds-size_1-of-2 header__action slds-m-top_x-small"><img src="assets/icons/user_60_black.png" class="slds-icon slds-icon_small"></div>
+					<div class="header__action slds-p-around_small slds-show_large border-right font-main">Dashboard</div>
+					<div class="header__action slds-p-around_small border-right"><img src="assets/icons/notification_60_black.png" class="slds-icon slds-icon_small"></div>
+					<div class="header__action slds-p-around_small">
+						<img src="assets/icons/user_60_black.png" class="slds-icon slds-icon_small">
+						<span class="slds-show_large slds-m-left_small font-sub">Harvey Specter&nbsp;<img src="assets/icons/chevrondown_120_black.png" class="slds-icon slds-icon-text-default slds-icon_xx-small slds-m-left_small"></span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main>
-		<!-- cards list -->
-		<div class="slds-grid slds-grid_vertical list margin_large">
-			<!-- list header -->
-			<div class="list__header slds-show_large slds-m-top_large slds-m-horizontal_xx-large slds-m-bottom_medium">
-				<p class="slds-m-left_xx-large header-main font-sub header-grid-a">Name</p>
-				<p class="header-sub font-sub header-grid-b">Total Contribution</p>
-				<p class="header-sub font-sub header-grid-c">Total Distributions</p>
-				<p class="header-sub font-sub header-grid-d">Total Balance</p>
-				<p class="header-sub font-sub header-grid-e">Details</p>
+		<div class="body">
+			<div class="slds-nav-vertical slds-show_large slds-p-top_medium sideBar">
+				<div class="slds-nav-vertical__section">
+					<h2 id="entity-header" class="slds-nav-vertical__title sideBar-heading">Summary</h2>
+					<ul aria-describedby="entity-header">
+						<li class="slds-nav-vertical__item">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action" aria-current="true">Account Summary</a>
+						</li>
+					</ul>
+				</div>
+				<div class="slds-nav-vertical__section">
+					<h2 id="folder-header" class="slds-nav-vertical__title sideBar-heading">Investments</h2>
+					<ul aria-describedby="folder-header">
+						<li class="slds-nav-vertical__item">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action">My Investments</a>
+						</li>
+						<li class="slds-nav-vertical__item slds-is-active">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action">Investor List</a>
+						</li>
+					</ul>
+				</div>
+				<div class="slds-nav-vertical__section">
+					<h2 id="folder-header" class="slds-nav-vertical__title sideBar-heading">Documents</h2>
+					<ul aria-describedby="folder-header">
+						<li class="slds-nav-vertical__item">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action">My Document</a>
+						</li>
+						<li class="slds-nav-vertical__item">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action">Delegate Document</a>
+						</li>
+					</ul>
+				</div>
+				<div class="slds-nav-vertical__section">
+					<h2 id="folder-header" class="slds-nav-vertical__title sideBar-heading">Transaction</h2>
+					<ul aria-describedby="folder-header">
+						<li class="slds-nav-vertical__item">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action">My Transaction</a>
+						</li>
+					</ul>
+				</div>
+				<div class="slds-nav-vertical__section">
+					<h2 id="folder-header" class="slds-nav-vertical__title sideBar-heading">Delegate</h2>
+					<ul aria-describedby="folder-header">
+						<li class="slds-nav-vertical__item">
+							<a href="javascript:void(0);" class="slds-nav-vertical__action">My Delegate</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-1-tiny.jpeg" class="card__top__img slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Morgan Stickman</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">morgan@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 821,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 821,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 821,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
+			<!-- quick actions and card list -->
+			<div class="listWrapper">
+				<!-- quick actions -->
+				<div class="slds-m-around_x-large slds-grid">
+					<h2 class="slds-col slds-size_1-of-3 font-heading">Investor List</h2>
+					<div class="slds-grid slds-col slds-size_2-of-3 quick-actions__controls">
+						<div class="slds-form-element slds-m-right_small slds-show_large quick-actions__inputs">
+							<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+								<img src="assets/icons/search_60_black.png" class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+								<input type="text" id="text-input-id-1" placeholder="Search by Name or Email…" class="slds-input" />
+							</div>
+						</div>
+						<div class="slds-form-element slds-m-right_small slds-show_x-large quick-actions__inputs quick-actions__inputs-size">
+							<div class="slds-form-element__control">
+								<div class="slds-select_container">
+									<select class="slds-select" id="select-01">
+										<option value="">Select…</option>
+										<option>Marvel</option>
+										<option>DC</option>
+										<option selected="true">Both</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="slds-form-element slds-m-right_small slds-show_x-large quick-actions__inputs quick-actions__inputs-size">
+							<div class="slds-form-element__control">
+								<div class="slds-select_container">
+									<select class="slds-select" id="select-01">
+										<option value="">Select…</option>
+										<option>Ironman</option>
+										<option>Batman</option>
+										<option>Captin America</option>
+										<option>Hulk</option>
+										<option>Black Widow</option>
+										<option selected="true">All</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- buttons -->
+						<div class="slds-grid slds-m-right_small slds-p-around_xx-small slds-show_medium quick-actions__inputs quick-action__button">
+							<button class="slds-button slds-button_icon slds-p-around_xx-small quick-action__button-is-active" title="Settings">
+								<img src="assets/icons/rows_60_black.png" class="slds-button__icon" aria-hidden="true">
+							</button>
+							<button class="slds-button slds-button_icon slds-p-around_xx-small" title="Settings">
+								<img src="assets/icons/tile_card_list_60_black.png" class="slds-button__icon" aria-hidden="true">
+							</button>
+						</div>
+						<button class="slds-button slds-button_icon slds-m-right_small slds-p-around_x-small quick-actions__inputs quick-action__button" title="Settings">
+							<img src="assets/icons/download_60_black.png" class="slds-button__icon" aria-hidden="true">
+						</button>
 					</div>
-
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
 				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-6-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Christy Hens</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">christy@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 81,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 81,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 821,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
+				<!-- card list -->
+				<div class=" slds-grid slds-grid_vertical list">
+					<!-- list header -->
+					<div class="list__header slds-show_large slds-m-top_large slds-m-horizontal_xx-large slds-m-bottom_medium">
+						<p class="slds-m-left_xx-large header-main font-sub header-grid-a">Name</p>
+						<p class="header-sub font-sub header-grid-b">Total Contribution</p>
+						<p class="header-sub font-sub header-grid-c">Total Distributions</p>
+						<p class="header-sub font-sub header-grid-d">Total Balance</p>
+						<p class="header-sub font-sub header-grid-e">Details</p>
 					</div>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-3-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Loren Edams</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">edams@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 1,221,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 1,221,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 1,221,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-1-tiny.jpeg" class="card__top__img slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Morgan Stickman</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">morgan@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 821,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 821,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 821,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-2-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Jajjy Orims</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">jajjy@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 674,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 674,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 674,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-6-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Christy Hens</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">christy@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 81,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 81,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 821,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-5-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Gordan Tames</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">gordan@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 811,200</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 811,200</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 811,200</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-3-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Loren Edams</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">edams@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 1,221,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 1,221,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 1,221,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-7-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Patty Cumins</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">patty@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 456,908</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 456,908</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 456,908</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-2-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Jajjy Orims</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">jajjy@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 674,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 674,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 674,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-3-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Jake Strongman</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">jake@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 4,500,007</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 4,500,007</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 4,500,007</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-5-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Gordan Tames</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">gordan@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 811,200</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 811,200</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 811,200</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-6-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Sheldon Cooper</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">sheldon@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 12,221,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 12,221,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 12,221,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-7-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Patty Cumins</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">patty@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 456,908</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 456,908</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 456,908</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-2-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Penny</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">penny@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 98,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 98,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 98,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-3-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Jake Strongman</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">jake@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 4,500,007</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 4,500,007</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 4,500,007</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-1-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Garry Ford</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">garry@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 333,890</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 333,890</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 333,890</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-6-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Sheldon Cooper</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">sheldon@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 12,221,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 12,221,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 12,221,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-3-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Illon Holmes</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">illon@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 621,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 621,243</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 621,243</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-2-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Penny</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">penny@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 98,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 98,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 98,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-4-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Elona Holmes</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">morgan@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 560,087</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 560,087</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 560,087</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-1-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Garry Ford</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">garry@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 333,890</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 333,890</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 333,890</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
-				</div>
-			</article>
-			<!-- cards -->
-			<article class="slds-col slds-card slds-m-around_xx-large list__card">
-				<div class="slds-media__body">
-					
-					<div class="slds-m-bottom_medium list__card__middle">
-						<img src="assets/images/mobile-img/person-5-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
-						<p class="font-main td-main flex-order-left">Matt Yuns</p>
-						<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">matt@hello.com</p>
-						<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
-						<p class="font-main td-sub flex-order-left">$ 3,800,991</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 3,800,991</p>
-						<p class="font-main td-sub slds-show_large flex-order-left">$ 3,800,9913</p>
-						<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_x-small">&nbsp;View
-						</a>
-						<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_x-small"></button>
-					</div>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-3-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Illon Holmes</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">illon@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 621,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 621,243</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 621,243</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
 
-					<!-- footer -->
-					<footer class="slds-card__footer list__card__footer slds-hide_large">
-						<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
-						</a>
-					</footer>
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
+					<!-- cards -->
+					<article class="slds-col slds-card slds-m-horizontal_xx-large slds-m-bottom_xx-large list__card">
+						<div class="slds-media__body">
+							
+							<div class="slds-m-bottom_medium list__card__middle">
+								<img src="assets/images/mobile-img/person-4-tiny.jpeg" class="card__top__img slds-m-bottom_medium slds-m-bottom_medium  flex-order-left">
+								<p class="font-main td-main flex-order-left">Elona Holmes</p>
+								<p class="font-sub slds-hide_large slds-m-bottom_medium flex-order-left">morgan@hello.com</p>
+								<p class="font-sub slds-hide_large flex-order-left">Total Contributions</p>
+								<p class="font-main td-sub flex-order-left">$ 560,087</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 560,087</p>
+								<p class="font-main td-sub slds-show_large flex-order-left">$ 560,087</p>
+								<a class="slds-card__footer-action link-text td-sub slds-show_large flex-order-left" href="javascript:void(0);"><img src="assets/icons/outcome_60_somke_blue.png" class="slds-icon slds-icon_xx-small">&nbsp;View
+								</a>
+								<button class="slds-m-top_small slds-m-right_small list__card__view-more flex-order-right"><img src="assets/icons/threedots_120_grey.png" class="slds-icon slds-icon_xx-small"></button>
+							</div>
+
+							<!-- footer -->
+							<footer class="slds-card__footer list__card__footer slds-hide_large">
+								<a class="slds-card__footer-action link-text" href="javascript:void(0);">View More
+								</a>
+							</footer>
+						</div>
+					</article>
 				</div>
-			</article>
+			</div>
 		</div>
 	</main>
 </body>
