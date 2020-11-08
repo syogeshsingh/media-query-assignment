@@ -68,6 +68,27 @@ html{
 	justify-content: flex-end;
 }
 
+/*for sidebar*/
+.body{
+	display: flex;
+}
+.listWrapper{
+	flex-grow: 1;
+}
+.sideBar{
+	background-color: rgba(198, 231, 250, 0.5);
+	flex: 0 0 20em;
+}
+.sideBar-heading{
+	font-size: 10px;
+	text-transform: uppercase;
+	color: rgba(18, 155, 250, 1);
+	font-weight: bold;
+}
+.hide{
+	display: none;
+}
+
 /*quick actions css*/
 .font-heading{
 	font-size: 18px;
@@ -163,24 +184,6 @@ html{
 	/*for page header*/
 	.border-right{
 		border-right: 1px solid rgba(0,0,0,0.1);
-	}
-
-	/*for sidebar*/
-	.body{
-		display: flex;
-	}
-	.listWrapper{
-		flex-grow: 1;
-	}
-	.sideBar{
-		background-color: rgba(198, 231, 250, 0.5);
-		flex: 0 0 20em;
-	}
-	.sideBar-heading{
-		font-size: 10px;
-		text-transform: uppercase;
-		color: rgba(18, 155, 250, 1);
-		font-weight: bold;
 	}
 
 	/*for top quick actions*/
